@@ -13,6 +13,16 @@ public class TrackCoach implements Coach {
     this.fortuneService = fortuneService;
   }
 
+  // add initialisation method
+  public void trackCoachInitialiser() {
+    System.out.println("Track Coach: Initialiser");
+  }
+
+  // add destructor method
+  public void trackCoachDestructor() {
+    System.out.println("Track Coach: Destructor");
+  }
+
   @Override
   public String getDailyWorkout() {
     return "Run 20 laps.";
